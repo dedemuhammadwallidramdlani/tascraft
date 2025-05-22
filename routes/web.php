@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\DetailTransaksiController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,6 +27,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('transaksis', TransaksiController::class);
     Route::get('/laporan', [DetailTransaksiController::class, 'indexLaporan'])->name('laporan.index');
     Route::resource('detail-transaksis', DetailTransaksiController::class);
+
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 require __DIR__.'/auth.php';
