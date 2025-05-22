@@ -39,12 +39,12 @@
                             <x-input-error :messages="$errors->get('stok')" class="mt-2" />
                         </div>
 
-                        <div class="mt-4">
+                        <!-- <div class="mt-4">
                             <x-input-label for="gambar" :value="__('Gambar')" />
                             <x-text-input id="gambar" class="block mt-1 w-full" type="file" name="gambar"
                                 :value="old('gambar')" />
                             <x-input-error :messages="$errors->get('gambar')" class="mt-2" />
-                        </div>
+                        </div> -->
 
                         <div class="mt-4">
                             <x-input-label for="category" :value="__('Kategori')" />

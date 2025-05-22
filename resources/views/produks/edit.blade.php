@@ -48,7 +48,7 @@
                             @enderror
                         </div>
 
-                        <div class="mb-4">
+                        <!-- <div class="mb-4">
                             <label for="gambar" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Gambar</label>
                             <input type="file" name="gambar" id="gambar" class="mt-1 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-300 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help">
                             <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">File harus berupa gambar (jpeg, png, jpg, gif) dengan ukuran maksimum 2MB.</p>
@@ -60,7 +60,7 @@
                             @error('gambar')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
-                        </div>
+                        </div> -->
 
                         <div class="mb-4">
                             <label for="category" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Kategori</label>

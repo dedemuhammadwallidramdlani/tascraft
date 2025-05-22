@@ -51,7 +51,7 @@
                             <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-800">
                             <tr class="bg-white border-t border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <th scope="col" class="px-6 py-3 text-center">NO</th>
-                                <th scope="col" class="px-6 py-3 text-left">Gambar</th>
+                                <!-- <th scope="col" class="px-6 py-3 text-left">Gambar</th> -->
                                 <th scope="col" class="px-6 py-3 text-left">Nama Produk</th>
                                 <th scope="col" class="px-6 py-3 text-left">Deskripsi</th>
                                 <th scope="col" class="px-6 py-3 text-center">Harga</th>
@@ -66,13 +66,13 @@
                                     <td class="px-6 py-4 text-center">
                                         {{ ($produks->currentPage() - 1) * $produks->perPage() + $loop->iteration }}
                                     </td>
-                                    <td class="px-6 py-2 text-left">
+                                    <!-- <td class="px-6 py-2 text-left">
                                         @if($produk->gambar && Storage::exists('public/gambar_produk/' . $produk->gambar))
                                             <img src="{{ asset('storage/gambar_produk/' . $produk->gambar) }}" alt="Gambar Produk" class="w-16 h-16 object-cover rounded">
                                         @else
                                             <span class="text-gray-400 italic">Tidak ada gambar</span>
                                         @endif
-                                    </td>
+                                    </td> -->
                                     <td class="px-6 py-2 text-left">{{ $produk->nama_produk }}</td>
                                     <td class="px-6 py-2 text-left">{{ $produk->deskripsi }}</td>
                                     <td class="px-6 py-2 text-center">Rp {{ number_format($produk->harga, 0, ',', '.') }}</td>
