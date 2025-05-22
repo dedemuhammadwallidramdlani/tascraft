@@ -24,14 +24,14 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-sm">
                 <div class="mx-auto py-4 px-4 sm:px-6 lg:px-8 text-gray-900 dark:text-gray-100">
                     <div class="flex items-center justify-between py-5 mb-5">
-                        <div>
+                        <!-- <div>
                             <h3 class="text-lg font-semibold dark:text-gray-300">Data Detail Transaksi</h3>
-                        </div>
+                        </div> -->
                         <div class="flex items-center space-x-2">
-                            <a href="{{ route('laporan.index') }}" target="_blank"
+                            <!-- <a href="{{ route('laporan.index') }}" target="_blank"
                                class="focus:outline-none text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Print Semua Laporan
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
@@ -44,8 +44,8 @@
                                 <th scope="col" class="px-6 py-3 text-left">Nama Produk</th>
                                 <th scope="col" class="px-6 py-3 text-center">Jumlah</th>
                                 <th scope="col" class="px-6 py-3 text-right">Harga Satuan</th>
-                                <th scope="col" class="px-6 py-3 text-right">Subtotal</th>
-                                <th scope="col" class="px-6 py-3 text-center">Aksi</th>
+                                <th scope="col" class="px-6 py-3 text-righht">Subtotal</th>
+                                <!-- <th scope="col" class="px-6 py-3 text-center">Aksi</th> -->
                             </tr>
                             </thead>
                             <tbody>
@@ -60,10 +60,10 @@
                                     <td class="px-6 py-2 text-right">Rp {{ number_format($detailTransaksi->harga_satuan, 0, ',', '.') }}</td>
                                     <td class="px-6 py-2 text-right">Rp {{ number_format($detailTransaksi->subtotal, 0, ',', '.') }}</td>
                                     <td class="px-6 py-2 text-center">
-                                        <a href="{{ route('laporan.index', $detailTransaksi->id) }}" target="_blank"
+                                        <!-- <a href="{{ route('laporan.index', $detailTransaksi->id) }}" target="_blank"
                                            class="focus:outline-none text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-xs px-3 py-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">
                                             Print
-                                        </a>
+                                        </a> -->
                                     </td>
                                 </tr>
                             @empty

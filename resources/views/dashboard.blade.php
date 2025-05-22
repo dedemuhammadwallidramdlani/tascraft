@@ -48,13 +48,13 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold">Total Penjualan</h3>
-                        <p class="text-3xl font-bold">Rp 500.000</p>
+                        <h3 class="text-lg font-semibold">Data Transaksi</h3>
+                        <p class="text-3xl font-bold">{{ $transaksis }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md">
                     <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">Grafik Penjualan Bulanan</h3>
                     <div class="h-64">
@@ -135,5 +135,5 @@
                 }
             }
         });
-    </script>
+    </script> -->
 </x-app-layout>
